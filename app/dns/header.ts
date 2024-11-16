@@ -8,7 +8,7 @@ class DnsHeader{
         //second_section which is the flags
         const {qr,opcode,aa,tc,rd,ra,z,rcode}=values;
         const second_section=qr | opcode | aa | tc | rd |ra | z | rcode;
-        header.writeInt16BE(second_section,2); 
+        header.writeIntBE(second_section,2,1); 
 
         //third_section
         header.writeInt16BE(values.qdcount,4);
