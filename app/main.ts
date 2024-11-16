@@ -7,7 +7,7 @@ console.log("Logs from your program will appear here!");
 
 const dnsHeaderStruct:header_Interface={
     id:1234,
-    qr:1<<15,
+    qr:1 << 15,
     opcode: Opcode.standard_query,
     aa:0,
     tc:0,
@@ -18,8 +18,8 @@ const dnsHeaderStruct:header_Interface={
     qdcount:0,
     ancount:0,
     nscount:0,
-    arcount:0
-}
+    arcount:0,
+};
 
 // Uncomment this block to pass the first stage
 const udpSocket: dgram.Socket = dgram.createSocket("udp4");
