@@ -1,7 +1,7 @@
 import type { header_Interface } from "../types/headerInterface";
 
 class DnsHeader{
-    static writeOnDns(values:header_Interface){
+    static WriteOnDnsHeaders(values:header_Interface){
         const header=Buffer.alloc(12);
         //first section
         header.writeInt16BE(values.id,0);
