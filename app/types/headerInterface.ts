@@ -1,7 +1,7 @@
-enum Opcode{
+export enum Opcode{
     standard_query=0
 }
-enum Rcode{
+export enum Rcode{
     noError=0,
     serverFailure=1,
     nameError=3,

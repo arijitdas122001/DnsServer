@@ -4,7 +4,7 @@ class DnsHeader{
     static writeOnDns(values:header_Interface){
         const header=Buffer.alloc(12);
         //first section
-        header.writeInt32BE(values.id,1);
+        header.writeInt32BE(values.id,0);
         //second_section which is the flags
         const {qr,opcode,aa,tc,rd,ra,z,rcode}=values;
         const second_section=qr | opcode | aa | tc | rd |ra | z | rcode;
