@@ -18,7 +18,6 @@ class DnsHeader{
         header.writeInt16BE(values.nscount,8);
         //sixth_section
         header.writeInt16BE(values.arcount,10);
-        
         return header;
     }
 }
